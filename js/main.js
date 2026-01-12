@@ -349,42 +349,5 @@ function submitTefila(e) {
 }
 
 // Language 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const langSwitch = document.getElementById("lang-switch");
-//   if (!langSwitch) {
-//     console.warn("No language switch on this page");
-//     return;
-//   }
-
-//   const file = window.location.pathname.split("/").pop();
-
-//   let targetPage;
-//   let label;
-
-//   // ENGLISH MAIN PAGE
-//   if (file === "index.html" || file === "") {
-//     label = "עב";
-//     targetPage = "index-heb.html";
-//   }
-
-//   // HEBREW MAIN PAGE
-//   if (file === "index-heb.html") {
-//     label = "EN";
-//     targetPage = "index.html";
-//   }
-
-//   if (!targetPage) return;
-
-//   langSwitch.textContent = label;
-//   langSwitch.href = targetPage;
-
-//   langSwitch.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     document.body.classList.add("slide-out");
-//     setTimeout(() => {
-//       window.location.href = targetPage;
-//     }, 400);
-//   });
-// });
 
 
