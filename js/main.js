@@ -1,4 +1,4 @@
-
+console.log("✅ main.js loaded", window.location.pathname);
 
 (function ($) {
 
@@ -349,36 +349,42 @@ function submitTefila(e) {
 }
 
 // Language 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const langSwitch = document.getElementById('lang-switch');
-//   if (!langSwitch) return;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const langSwitch = document.getElementById("lang-switch");
+//   if (!langSwitch) {
+//     console.warn("No language switch on this page");
+//     return;
+//   }
 
-//   const html = document.documentElement;
-//   const currentLang = html.getAttribute('data-lang');
+//   const file = window.location.pathname.split("/").pop();
 
 //   let targetPage;
 //   let label;
 
-//   if (currentLang === 'en') {
-//     targetPage = 'home-heb.html';
-//     label = 'עב';
-//   } else if (currentLang === 'he') {
-//     targetPage = 'home-en.html';
-//     label = 'EN';
-//   } else {
-//     return;
+//   // ENGLISH MAIN PAGE
+//   if (file === "index.html" || file === "") {
+//     label = "עב";
+//     targetPage = "index-heb.html";
 //   }
+
+//   // HEBREW MAIN PAGE
+//   if (file === "index-heb.html") {
+//     label = "EN";
+//     targetPage = "index.html";
+//   }
+
+//   if (!targetPage) return;
 
 //   langSwitch.textContent = label;
 //   langSwitch.href = targetPage;
 
-//   langSwitch.addEventListener('click', (e) => {
+//   langSwitch.addEventListener("click", (e) => {
 //     e.preventDefault();
-//     document.body.classList.add('slide-out');
-
+//     document.body.classList.add("slide-out");
 //     setTimeout(() => {
 //       window.location.href = targetPage;
 //     }, 400);
 //   });
 // });
+
 
