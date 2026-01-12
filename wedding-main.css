@@ -227,7 +227,7 @@ a {
     top: 0;
     right: 0;
     width: 80%;
-    height: 100vh;
+    height: 100dvh;
     max-width: 80%;
     height: 100%;
     background: #292929e3;
@@ -392,7 +392,7 @@ a {
 
 .hero {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     background: url(images/odayaamit9.jpg) top center / cover no-repeat;
     display: flex;
@@ -402,7 +402,7 @@ a {
 }
 
 .hero.chrome-mobile {
-    height: 95vh;
+    height: 95dvh;
 }
 
 .overlay1 {
@@ -486,7 +486,7 @@ a {
 
 /* @media (max-width: 500px) {
     .hero {
-        height: 95vh;
+        height: 95dvh;
     }
 } */
 
@@ -844,7 +844,7 @@ custom-countdown div {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .rsvp-container {

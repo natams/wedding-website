@@ -39,7 +39,7 @@ body {
 
 body.locked {
   overflow: hidden;
-  height: 100vh;
+  height: 100dvh;
 }
 
 *,
@@ -67,11 +67,11 @@ body.is-preload *:after {
 
 .scene {
     position: relative;
-    min-height: 100svh;
+    min-height: 100sdvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .invitation {
