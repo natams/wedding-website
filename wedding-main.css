@@ -525,12 +525,12 @@ a {
     }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .hero-text p:nth-of-type(5),
     .hero-text .subtitle {
         align-self: baseline;
     }
-}
+} */
 
 /* Content Container */
 
@@ -1123,7 +1123,7 @@ input:focus::placeholder {
 /* Registry */
 
 .registry {
-    padding: 3em 2em;
+    padding: 4em 2em;
     /* background-color: #6b6b72; */
     background-color: #efeeee;
     box-shadow: inset 1px 1px 8px 0px #00000080;
