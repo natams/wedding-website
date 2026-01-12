@@ -77,33 +77,8 @@
 
     <!-- Langauge -->
     <div class="language-switch">
-        <a id="lang-switch" href="#">עב</a>
+        <a id="lang-switch" href="index-heb.html">עב</a>
     </div>
-    <script>
-        const langSwitch = document.getElementById('lang-switch');
-        const currentPage = window.location.pathname;
-
-        let targetPage = null;
-
-        if (currentPage.includes('index.html')) {
-            langSwitch.textContent = 'עב';
-            targetPage = 'index-heb.html';
-        } else if (currentPage.includes('index-heb.html')) {
-            langSwitch.textContent = 'EN';
-            targetPage = 'index.html';
-        }
-
-        langSwitch.href = targetPage;
-
-        langSwitch.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.body.classList.add('slide-out');
-
-            setTimeout(() => {
-                window.location.href = targetPage;
-            }, 400);
-        });
-    </script>
 
     <!-- Hero -->
     <div class="hero">
