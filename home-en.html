@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON and Tab Name-->
+    <title>Nathalie & Itay</title>
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+
+    <!-- Link to CSS-->
+    <link rel="stylesheet" href="wedding-main.css" />
+    <script src="js/main.js" defer></script>
+
+    <!-- Google Front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Corinthia:wght@400;700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Awesome Font -->
+    <script src="https://kit.fontawesome.com/14cfbcea0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Burger Menu-->
+    <div class="header">
+
+        <div class="menu-mobile">
+
+            <div class="burger-menu" id="burgermenu">
+                <div class="burger-icon"><a href="#menu">Menu</a></div>
+            </div>
+
+            <nav class="menu-text" id="menu">
+                <ul>
+                    <li><a href="#timeline">Schedule</a></li>
+                    <li><a href="#countdown">Countdown</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#registry">Registry</a></li>
+                    <li><a href="#tefila">Tefillot Form</a></li>
+                    <li><a href="#contact-us">Our Details</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-desktop">
+            <!-- Left -->
+            <div class="menu-left">
+                <a href="#timeline">Schedule</a>
+                <a href="#countdown">Countdown</a>
+                <a href="#location">Location</a>
+                <a href="#registry">Registry</a>
+                <a href="#tefila">Tefillot Form</a>
+            </div>
+
+            <!-- Center -->
+            <div class="menu-center">
+                <p class="bride-groom">Nathalie <span class="cursive antic"> & </span>Itay</p>
+            </div>
+
+            <!-- Right -->
+            <div class="menu-right">
+                <!-- <a href="#rsvp">RSVP</a> -->
+                <a href="#contact-us">Our Details</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Langauge -->
+    <div class="language-switch">
+        <a id="lang-switch" href="#">עב</a>
+    </div>
+    <script>
+        const langSwitch = document.getElementById('lang-switch');
+        const currentPage = window.location.pathname;
+
+        let targetPage = null;
+
+        if (currentPage.includes('home-en.html')) {
+            langSwitch.textContent = 'עב';
+            targetPage = 'home-heb.html';
+        } else if (currentPage.includes('home-heb.html')) {
+            langSwitch.textContent = 'EN';
+            targetPage = 'home-en.html';
+        }
+
+        langSwitch.href = targetPage;
+
+        langSwitch.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.classList.add('slide-out');
+
+            setTimeout(() => {
+                window.location.href = targetPage;
+            }, 400);
+        });
+    </script>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="overlay1"></div>
+        <div class="overlay2"></div>
+        <div class="and-symbol">&</div>
+        <div class="hero-text">
+            <p class="subtitle">Join us for<br> the wedding of</p>
+            <p class="display-none">‎</p>
+            <p class="display-none">‎</p>
+            <p class="title">Nathalie<br> <span class="cursive">and</span><br> Itay </p>
+            <p class="subtitle">June 29th, 2026<br> Haahuzah Modiin</p>
+            <p class="display-none">‎</p>
+        </div>
+    </div>
+
+    <div class="container" id="content">
+
+        <!-- Schedule -->
+        <div class="timeline" id="timeline">
+            <div class="center">
+                <h2>Wedding Timeline</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="images/icons/cheers.png"></span>
+                        <span class="time">19:00</span>
+                        <span class="event">Kabalat Panim</span>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="images/icons/scroll.png"></span>
+                        <span class="time">19:30</span>
+                        <span class="event">Signing of the Ketubah</span>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="images/icons/rings.png"></span>
+                        <span class="time">20:00</span>
+                        <span class="event">Chuppah & Kiddushin</span>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="images/icons/food-tray.png"></span>
+                        <span class="time">21:00</span>
+                        <span class="event">Reception Dinner</span>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="images/icons/dancing.png"></span>
+                        <span class="time">21:30</span>
+                        <span class="event">Dancing & Celebrations</span>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="images/icons/dessert.png"
+                                style="    max-height: 100%; max-width: 100%;"></span>
+                        <span class="time">22:00</span>
+                        <span class="event">Dessert</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown" id="countdown">
+            <div class="filter"></div>
+            <h2>Let the Countdown Begin</h2>
+            <custom-countdown></custom-countdown>
+        </div>
+
+        <!-- Location -->
+        <div class="location" id="location">
+
+            <h2>Our Beautiful Location</h2>
+            <div class="location-content">
+                <img src="images/venue3.png">
+                <h3>Haahuzah Modiin</h3>
+                <!-- <p>Sderot HaTa'asiyot Blvd. 14, Modi'in-Maccabim-Re'ut, Israel</p> -->
+                <div class="links">
+                    <a href="https://www.google.com/maps/place/Haahuzah+Modiin/@31.884348,34.959167,10z/data=!4m6!3m5!1s0x1502ceb054ea922b:0xb7b7badeb9c696bf!8m2!3d31.8843479!4d34.9591674!16s%2Fg%2F11_t7h5d8?hl=en&entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+                        target="_blank">
+                        <span class="fa-solid fa-map-location-dot"></span> </a>
+                    <a href="https://ul.waze.com/ul?venue_id=22937919.229117044.14451&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                        target="_blank">
+                        <span class="fa-brands fa-waze"></span> </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RSVP -->
+        <!-- <div class="rsvp" id="rsvp">
+            <div class="rsvp-container">
+
+                <div id="form-content">
+                    <h2>Kindly RSVP</h2>
+                    <p>We can't wait to celebrate our special day with you. Your presence means the world to us! Please
+                        let
+                        us know if you will be able to join.</p>
+                    <form
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSfoTG2aWC43TGMQBuOGXsIwpMD5xHKkb6gzxtP4x4rOXQTT3A/formResponse"
+                        method="POST" target="hidden_iframe" id="rsvp-form">
+
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="entry.975553680" placeholder="Sam and Sarah Cohen"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="entry.1123997353" placeholder="samcohen@gmail.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="entry.1712801729" placeholder="+972501234567"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Will you be attending?</label>
+                            <div class="form-flex">
+                                <label>
+                                    <input type="radio" name="entry.1653326350" value="Yes" required>
+                                    Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="entry.1653326350" value="No" required>
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Total number of guests?</label>
+                            <input type="number" id="guests" name="entry.864625115" min="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="food">Any food restrictions?</label>
+                            <input type="text" id="food" name="entry.375290791" placeholder="Vegan, Gluten free">
+                        </div>
+
+                        <button type="submit" class="submit-button">Send RSVP</button>
+                    </form>
+
+                    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+                </div>
+                <p id="thank-you-message">Thank you for your RSVP!</p>
+
+            </div>
+        </div> -->
+
+        <!-- Tefila Form -->
+        <div class="tefila" id="tefila">
+            <div class="tefila-container">
+
+                <div id="tefila-form-content">
+                    <h2>Wedding Day Tefillot Form</h2>
+                    <p>Please kindly give names to pray for</p>
+
+                    <form onsubmit="submitTefila(event)">
+
+                        <div class="form-group">
+                            <label>Full Hebrew Name</label>
+                            <input type="text" id="hebrew-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>What to pray for?</label>
+
+                            <label>
+                                <input type="radio" name="prayer" value="Refua Shelema" required>
+                                Refua Shelema
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prayer" value="Sivug (Partner)">
+                                Sivug (Partner)
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prayer" value="Parnasa Tova">
+                                Parnasa Tova
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prayer" value="Children">
+                                Children
+                            </label>
+
+                            <div class="other-option">
+                                <label style="margin-bottom: 0em;">
+                                    <input type="radio" name="prayer" value="Other">
+                                    Other
+                                </label>
+
+                                <input type="text" id="other-prayer" placeholder="Please specify">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div id="thank-you-message-tefila" style="display:none;">
+                    Thank you!
+                </div>
+            </div>
+        </div>
+
+        <!-- Registry -->
+        <div class="registry" id="registry">
+            <h2>Our Registry</h2>
+            <p>While your presence at our wedding is the greatest gift, if you wish to share in our joy, we kindly
+                request monetary gifts to help us begin our new life together. Below, you'll find different ways you can
+                contribute to our future.</p>
+
+            <div class="payment-methods">
+
+                <div class="transfer">
+                    <div class="payment-option">
+                        <h3>Gibraltar - Nathalie</h3>
+                        <p>Account Details<br>
+                            Account Number: 48240346<br>
+                            Sort Code: 60 60 60<br>
+                            BIC: RBOSGIGI<br>
+                            IBAN: GI79NWBK060606048240346</p>
+                    </div>
+                    <div class="payment-option">
+                        <h3>Israel - Nathalie</h3>
+                        <p>Account Details<br>
+                            Branch: Discount 066<br>
+                            Account Number: 209834910<br>
+                            IBAN: IL90011660000209834910</p>
+                    </div>
+                    <div class="payment-option">
+                        <h3>Israel - Itay</h3>
+                        <p>Account Details<br>
+                            Branch: Discount 065<br>
+                            Account Number: 120864233<br>
+                            IBAN: IL880110650000120864233</p>
+                    </div>
+                </div>
+
+                <div class="apps">
+                    <div class="payment-option">
+                        <p class="payment-name">Nathalie</p>
+                        <a href="https://revolut.me/nathaliea" target="_blank"><img src="images/revolut.png"></a>
+                    </div>
+                    <div class="payment-option">
+                        <p class="payment-name">Nathalie</p>
+                        <a href="https://www.bitpay.co.il/app/me/BE291A89-FF3A-4FF9-87D6-A5D006F2B0CE"
+                            target="_blank"><img src="images/bit.png"></a>
+                    </div>
+                    <div class="payment-option">
+                        <p class="payment-name">Itay</p>
+                        <a href="#" target="_blank"><img src="images/paybox.png"></a>
+                    </div>
+                    <div class="payment-option">
+                        <p class="payment-name">Itay</p>
+                        <a href="https://www.bitpay.co.il/app/me/F88862DA-1EBC-42C1-E599-102296DDAAC2CFD5"
+                            target="_blank"><img src="images/bit.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="alternative">Alternatively, you are welcome to give us cash at the wedding.<br> We truly
+                appreciate
+                your generosity!</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-us" id="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact-columns">
+
+                <div class="contact-card">
+                    <p class="name">Nathalie Amselem</p>
+                    <a href="tel:+972503799713">+972 (0)503799713</a></p>
+                    <a href="mailto:nathalie.amselem@live.com">nathalie.amselem@live.com</a></p>
+                    <div class="social-media">
+                        <a href="https://wa.me/qr/QS7WAHZGA6PKH1" target="_blank"><span
+                                class="fa-brands fa-whatsapp"></span></a>
+                        <a href="https://www.instagram.com/nathalieamselem/" target="_blank"><span
+                                class="fa-brands fa-instagram"></span></a>
+                        <!-- <a href="#"><span class="fa-brands fa-facebook"></span></a> -->
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <p class="name">Itay Dahan</p>
+                    <a href="tel:+972526700704">+972 (0)526700704</a></p>
+                    <a href="mailto:itay.dahan1999@gmail.com">itay.dahan1999@gmail.com</a></p>
+                    <div class="social-media">
+                        <a href="http://wa.me/972526700704" target="_blank"><span
+                                class="fa-brands fa-whatsapp"></span></a>
+                        <a href="https://www.instagram.com/_itay/" target="_blank"><span
+                                class="fa-brands fa-instagram"></span></a>
+                        <!-- <a href="#"><span class="fa-brands fa-facebook"></span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2026 <a href="https://nathalieamselem.com">Nathalie Amselem</a>. All Rights
+                Reserved</p>
+        </div>
+
+    </div>
+
+    <!-- Scroll Up / Down Icons -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span class="fa-solid fa-arrow-up"></span>
+    </div>
+
+    <div class="scroll-down" id="scrollDown">
+        <a href="#"><span class="fa-solid fa-arrow-down"></span></a>
+    </div>
+
+    <!-- Scripts -->
+    <scripts>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/browser.min.js"></script>
+        <script src="js/breakpoints.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+    </scripts>
+
+</body>
+
+
+</html>
