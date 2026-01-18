@@ -540,15 +540,16 @@ input:focus::placeholder {
     opacity: 1;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     animation: floatArrow 2.5s ease-in-out infinite;
+    z-index: 999;
 }
 
 .scroll-down span {
     font-size: 25px;
-    color: #0000008f;
+    color: #EBE1D3;
 }
 
 .scroll-down a {
-    color: #0000008f;
+    color: #EBE1D3;
     text-decoration: none;
 }
 

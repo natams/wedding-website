@@ -411,7 +411,7 @@ a {
 .and-symbol {
     position: absolute;
     top: 55%;
-    left: 42%;
+    left: 40%;
     transform: translate(-50%, -50%);
     font-size: 40em;
     font-family: "Antic Didone", serif;
@@ -472,23 +472,13 @@ a {
     }
 } */
 
-@media (max-width: 400px) {
 
-    .and-symbol {
-        font-size: 34em;
-    }
-
-    .hero-text {
-        margin: 0em 0em 0em 0em;
-    }
-}
-
-@media (max-width: 900px) {
+@media (min-width: 900px) {
     .and-symbol {
         top: 55%;
         left: 49%;
         font-size: 21em;
-        /* color: #00000030; */
+        color: #00000030;
     }
 
     .hero-text {
@@ -507,12 +497,25 @@ a {
     }
 }
 
-/* @media (max-width: 600px) {
-    .hero-text p:nth-of-type(5),
-    .hero-text .subtitle {
-        align-self: baseline;
+@media (max-width: 900px) {
+
+    .hero-text .title {
+        margin: 0em 0em 2em 0em;
+        right: 10px;
+        position: relative;
     }
-} */
+}
+
+@media (max-width: 400px) {
+
+    .and-symbol {
+        font-size: 34em;
+    }
+
+    .hero-text {
+        margin: 0em 0em 0em 0em;
+    }
+}
 
 /* Content Container */
 
@@ -964,7 +967,7 @@ input:focus::placeholder {
 /* Tefila */
 
 .tefila {
-    background-image: url('images/n&i1.jpg');
+    background-image: url('images/n&i6.jpg');
     background-size: cover;
     background-position: center;
     padding: 4em 2em 3em 4em;
