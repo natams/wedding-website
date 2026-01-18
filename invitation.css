@@ -208,9 +208,9 @@ img {
     border-radius: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .bg {
-        background: url(images/odayaamit6.jpg) center center / cover no-repeat;
+        background: url(images/n&i1.jpg) center center / cover no-repeat;
     }
 
     .invitation {
