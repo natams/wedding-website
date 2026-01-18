@@ -62,7 +62,7 @@ body.is-preload *:after {
 /* Invitation */
 
 .bg {
-    background: url("images/n&i3.jpg") center / cover no-repeat;
+    background: url("images/n&i3.webp") center / cover no-repeat;
 }
 
 .scene {
@@ -212,7 +212,7 @@ img {
 
 @media (max-width: 600px) {
     .bg {
-        background: url(images/n&i1.jpg) center center / cover no-repeat;
+        background: url(images/n&i1.webp) center center / cover no-repeat;
     }
 
     .invitation {
