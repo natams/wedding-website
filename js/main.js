@@ -251,7 +251,7 @@ class CountdownElement extends HTMLElement {
 	}
 
 	updateCountdown() {
-		const countdownDate = new Date('June 30, 2026 00:00:00').getTime();
+		const countdownDate = new Date('June 29, 2026 20:30:00').getTime();
 		const currentDate = new Date().getTime();
 		const timeDifference = countdownDate - currentDate;
 

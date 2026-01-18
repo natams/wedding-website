@@ -46,7 +46,7 @@ function pullOut() {
       ease: Circ.easeInOut
     }, 'move')
 
-    .to('.card', 1.2, {
+.to('.card', 0.95, {
       y: '125%',
       rotationZ: -90,
       transformOrigin: '50% 50%',
