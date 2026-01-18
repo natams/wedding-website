@@ -6,6 +6,10 @@ const details = document.getElementById('details');
 let flipped = false;
 let arrowVisible = false;
 
+TweenMax.set('.mask', {
+  clipPath: 'inset(0 0 35% 0)'
+});
+
 function pullOut() {
   button.fadeOut(300);
 
@@ -19,7 +23,7 @@ function pullOut() {
 
     .to('.card', 0.8, {
       y: '0%',
-      scaleY: 1.2,
+      scaleY: 1.05,
       ease: Circ.easeInOut
     })
 
@@ -41,7 +45,7 @@ function pullOut() {
       }
     })
 
-    .add('move')
+.add('move', '-=0.12')
 
     .to('.mask', 1.3, {
       clipPath: 'inset(0 0 0% 0)',
@@ -113,5 +117,3 @@ window.addEventListener('touchmove', () => {
   if (!arrowVisible) return;
   hideArrowAndUnlock();
 }, { passive: true });
-
-console.log
