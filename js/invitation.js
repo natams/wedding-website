@@ -6,10 +6,6 @@ const details = document.getElementById('details');
 let flipped = false;
 let arrowVisible = false;
 
-TweenMax.set('.mask', {
-  clipPath: 'inset(0 0 35% 0)'
-});
-
 function pullOut() {
   button.fadeOut(300);
 
@@ -23,7 +19,7 @@ function pullOut() {
 
     .to('.card', 0.8, {
       y: '0%',
-      scaleY: 1.05,
+      scaleY: 1.2,
       ease: Circ.easeInOut
     })
 
@@ -45,7 +41,7 @@ function pullOut() {
       }
     })
 
-.add('move', '-=0.12')
+    .add('move')
 
     .to('.mask', 1.3, {
       clipPath: 'inset(0 0 0% 0)',
