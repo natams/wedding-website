@@ -23,7 +23,7 @@ function pullOut() {
       ease: Circ.easeInOut
     })
 
-    .set('.mask', {
+.to('.mask', 0.01, {
       overflow: 'visible',
       onComplete: function () {
         envelope.addClass('is-open');
@@ -41,12 +41,14 @@ function pullOut() {
       }
     })
 
+    .add('move')
+
     .to('.mask', 1.3, {
       clipPath: 'inset(0 0 0% 0)',
       ease: Circ.easeInOut
     }, 'move')
 
-.to('.card', 0.75, {
+.to('.card', 0.95, {
       y: '125%',
       rotationZ: -90,
       transformOrigin: '50% 50%',
@@ -111,3 +113,5 @@ window.addEventListener('touchmove', () => {
   if (!arrowVisible) return;
   hideArrowAndUnlock();
 }, { passive: true });
+
+console.log
