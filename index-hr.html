@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" dir="ltr">
+<html lang="he" data-lang="he">
 
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
 <body>
 
     <!-- Burger Menu-->
-    <div class="header">
+    <div class="header hr-dir" dir="rtl">
 
         <div class="menu-mobile">
 
@@ -41,24 +41,25 @@
 
             <nav class="menu-text" id="menu">
                 <ul>
-                    <li><a href="#timeline">Schedule</a></li>
-                    <li><a href="#countdown">Countdown</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#registry">Registry</a></li>
-                    <li><a href="#tefila">Tefillot Form</a></li>
-                    <li><a href="#contact-us">Our Details</a></li>
+                    <li><a href="#timeline">לוח זמנים</a></li>
+                    <li><a href="#countdown">ספירה לאחור</a></li>
+                    <li><a href="#location">מיקום</a></li>
+                    <li><a href="#registry">רשימת מתנות</a></li>
+                    <li><a href="#tefila">טופס תפילות</a></li>
+                    <li><a href="#contact-us">הפרטים שלנו</a></li>
                 </ul>
             </nav>
+
         </div>
 
         <div class="menu-desktop">
             <!-- Left -->
             <div class="menu-left">
-                <a href="#timeline">Schedule</a>
-                <a href="#countdown">Countdown</a>
-                <a href="#location">Location</a>
-                <a href="#registry">Registry</a>
-                <a href="#tefila">Tefillot Form</a>
+                <a href="#timeline">לוח זמנים</a>
+                <a href="#countdown">ספירה לאחור</a>
+                <a href="#location">מיקום</a>
+                <a href="#registry">רשימת מתנות</a>
+                <a href="#tefila">טופס תפילות</a>
             </div>
 
             <!-- Center -->
@@ -68,16 +69,15 @@
 
             <!-- Right -->
             <div class="menu-right">
-                <!-- <a href="#rsvp">RSVP</a> -->
-                <a href="#contact-us">Our Details</a>
+                <a href="#contact-us">הפרטים שלנו</a>
             </div>
         </div>
 
     </div>
 
     <!-- Language -->
-    <div class="language-switch">
-        <a id="lang-switch" href="index-hr.html">עב</a>
+    <div class="language-switch hr-dir-2">
+        <a id="lang-switch" href="index.html">EN</a>
     </div>
 
     <!-- Hero -->
@@ -86,11 +86,11 @@
         <div class="overlay2"></div>
         <div class="and-symbol">&</div>
         <div class="hero-text">
-            <p class="subtitle">Join us for<br> the wedding of</p>
+            <p class="subtitle">הצטרפו אלינו<br> לחתונה של</p>
             <p class="display-none">‎</p>
             <p class="display-none">‎</p>
             <p class="title">Nathalie<br> <span class="cursive">and</span><br> Itay </p>
-            <p class="subtitle">June 29th, 2026<br> Haahuzah Modiin</p>
+            <p class="subtitle"><span dir="rtl">29 ביוני 2026</span><br> האחוזה מודיעין</p>
             <p class="display-none">‎</p>
         </div>
     </div>
@@ -100,37 +100,37 @@
         <!-- Schedule -->
         <div class="timeline" id="timeline">
             <div class="center">
-                <h2>Wedding Timeline</h2>
+                <h2>לוח הזמנים של החתונה</h2>
                 <ul>
                     <li>
                         <span class="icon"><img src="images/icons/cheers.png"></span>
                         <span class="time">19:30</span>
-                        <span class="event">Kabalat Panim</span>
+                        <span class="event">קבלת פנים</span>
                     </li>
                     <li>
                         <span class="icon"><img src="images/icons/scroll.png"></span>
                         <span class="time">20:00</span>
-                        <span class="event">Signing of the Ketubah</span>
+                        <span class="event">חתימה על הכתובה</span>
                     </li>
                     <li>
                         <span class="icon"><img src="images/icons/rings.png"></span>
                         <span class="time">20:30</span>
-                        <span class="event">Chuppah & Kiddushin</span>
+                        <span class="event">חופה וקידושין</span>
                     </li>
                     <li>
                         <span class="icon"><img src="images/icons/food-tray.png"></span>
                         <span class="time">21:30</span>
-                        <span class="event">Reception Dinner</span>
+                        <span class="event">ארוחת ערב</span>
                     </li>
                     <li>
                         <span class="icon"><img src="images/icons/dancing.png"></span>
                         <span class="time">22:00</span>
-                        <span class="event">Dancing & Celebrations</span>
+                        <span class="event">ריקודים וחגיגות</span>
                     </li>
                     <li>
                         <span class="icon"><img src="images/icons/cake.png" style="transform: scale(0.9);"></span>
                         <span class="time">23:00</span>
-                        <span class="event">Dessert</span>
+                        <span class="event">קינוחים</span>
                     </li>
                 </ul>
             </div>
@@ -139,18 +139,18 @@
         <!-- Countdown -->
         <div class="countdown" id="countdown">
             <div class="filter"></div>
-            <h2>Let the Countdown Begin</h2>
+            <h2 class="hr-font">שתתחיל הספירה לאחור</h2>
             <custom-countdown></custom-countdown>
         </div>
 
         <!-- Location -->
         <div class="location" id="location">
 
-            <h2>Our Beautiful Location</h2>
+            <h2 class="hr-font-2">המקום היפה שלנו</h2>
             <div class="location-content">
                 <img src="images/venue3.png">
-                <h3>Haahuzah Modiin</h3>
-                <p>Sderot HaTa'asiyot Blvd. 14, Modi'in-Maccabim-Re'ut, Israel</p>
+                <h3>האחוזה מודיעין</h3>
+                <p>שדרות התעשיות 14, מודיעין-מכבים-רעות, ישראל</p>
                 <div class="links">
                     <a href="https://www.google.com/maps/place/Haahuzah+Modiin/@31.884348,34.959167,10z/data=!4m6!3m5!1s0x1502ceb054ea922b:0xb7b7badeb9c696bf!8m2!3d31.8843479!4d34.9591674!16s%2Fg%2F11_t7h5d8?hl=en&entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
                         target="_blank">
@@ -229,131 +229,129 @@
         </div> -->
 
         <!-- Tefila Form -->
-        <div class="tefila" id="tefila">
+        <div class="tefila" id="tefila" dir="rtl">
             <div class="tefila-container">
 
                 <div id="tefila-form-content">
-                    <h2>Wedding Day Tefillot Form</h2>
-                    <p>Please kindly give names to pray for</p>
+                    <h2>טופס תפילות ליום החתונה</h2>
+                    <p>נשמח אם תכתבו שמות לתפילה</p>
 
                     <form onsubmit="submitTefila(event)">
 
-                        <div class="form-group">
-                            <label>Full Hebrew Name</label>
+                        <div class="form-group hr">
+                            <label>שם מלא בעברית</label>
                             <input type="text" id="hebrew-name" required>
                         </div>
 
-                        <div class="form-group">
-                            <label>What to pray for?</label>
+                        <div class="form-group hr">
+                            <label>על מה להתפלל?</label>
 
                             <label>
                                 <input type="radio" name="prayer" value="Refua Shelema" required>
-                                Refua Shelema
+                                רפואה שלמה
                             </label>
 
                             <label>
                                 <input type="radio" name="prayer" value="Sivug (Partner)">
-                                Sivug (Partner)
+                                זיווג
                             </label>
 
                             <label>
                                 <input type="radio" name="prayer" value="Parnasa Tova">
-                                Parnasa Tova
+                                פרנסה טובה
                             </label>
 
                             <label>
                                 <input type="radio" name="prayer" value="Children">
-                                Children
+                                ילדים
                             </label>
 
                             <div class="other-option">
                                 <label style="margin-bottom: 0em;">
                                     <input type="radio" name="prayer" value="Other">
-                                    Other
+                                    אחר
                                 </label>
 
-                                <input type="text" id="other-prayer" placeholder="Please specify">
+                                <input type="text" id="other-prayer" placeholder="נא לפרט">
                             </div>
                         </div>
 
-                        <button type="submit" class="submit-button">Submit</button>
+                        <button type="submit" class="submit-button">שליחה</button>
                     </form>
                 </div>
 
                 <div id="thank-you-message-tefila" style="display:none;">
-                    Thank you!
+                    תודה רבה!
                 </div>
             </div>
         </div>
 
         <!-- Registry -->
-        <div class="registry" id="registry">
-            <h2>Our Registry</h2>
-            <p>While your presence at our wedding is the greatest gift, if you wish to share in our joy, we kindly
-                request monetary gifts to help us begin our new life together. Below, you'll find different ways you can
-                contribute to our future.</p>
+        <div class="registry" id="registry"  dir="rtl">
+            <h2 class="hr-font-3">רשימת המתנות שלנו</h2>
+            <p>הנוכחות שלכם בחתונה שלנו היא המתנה הגדולה ביותר, אך אם תרצו לשמח אותנו מעבר לכך, נשמח לקבל מתנה כספית
+                שתסייע לנו להתחיל את חיינו המשותפים. להלן מספר דרכים בהן תוכלו לקחת חלק בבניית עתידנו.</p>
 
             <div class="payment-methods">
 
                 <div class="transfer">
                     <div class="payment-option">
-                        <h3>Gibraltar - Nathalie</h3>
-                        <p>Account Details<br>
-                            Account Number: 48240346<br>
-                            Sort Code: 60 60 60<br>
+                        <h3>גיברלטר - נטלי</h3>
+                        <p>פרטי חשבון<br>
+                            מספר חשבון: 48240346<br>
+                            קוד סניף: 60 60 60<br>
                             BIC: RBOSGIGI<br>
                             IBAN: GI79NWBK060606048240346</p>
                     </div>
                     <div class="payment-option">
-                        <h3>Israel - Nathalie</h3>
-                        <p>Account Details<br>
-                            Branch: Discount 066<br>
-                            Account Number: 209834910<br>
+                        <h3>ישראל - נטלי</h3>
+                        <p>פרטי חשבון<br>
+                            סניף: דיסקונט 066<br>
+                            מספר חשבון: 209834910<br>
                             IBAN: IL90011660000209834910</p>
                     </div>
                     <div class="payment-option">
-                        <h3>Israel - Itay</h3>
-                        <p>Account Details<br>
-                            Branch: Discount 065<br>
-                            Account Number: 120864233<br>
+                        <h3>ישראל - איתי</h3>
+                        <p>פרטי חשבון<br>
+                            סניף: דיסקונט 065<br>
+                            מספר חשבון: 120864233<br>
                             IBAN: IL880110650000120864233</p>
                     </div>
                 </div>
 
                 <div class="apps">
                     <div class="payment-option">
-                        <p class="payment-name">Nathalie</p>
+                        <p class="payment-name">נטלי</p>
                         <a href="https://revolut.me/nathaliea" target="_blank"><img src="images/revolut.png"></a>
                     </div>
                     <div class="payment-option">
-                        <p class="payment-name">Nathalie</p>
+                        <p class="payment-name">נטלי</p>
                         <a href="https://www.bitpay.co.il/app/me/BE291A89-FF3A-4FF9-87D6-A5D006F2B0CE"
                             target="_blank"><img src="images/bit.png"></a>
                     </div>
                     <div class="payment-option">
-                        <p class="payment-name">Itay</p>
+                        <p class="payment-name">איתי</p>
                         <a href="#" target="_blank"><img src="images/paybox.png"></a>
                     </div>
                     <div class="payment-option">
-                        <p class="payment-name">Itay</p>
+                        <p class="payment-name">איתי</p>
                         <a href="https://www.bitpay.co.il/app/me/F88862DA-1EBC-42C1-E599-102296DDAAC2CFD5"
                             target="_blank"><img src="images/bit.png"></a>
                     </div>
                 </div>
             </div>
 
-            <p class="alternative">Alternatively, you are welcome to give us cash at the wedding.<br> We truly
-                appreciate
-                your generosity!</p>
+            <p class="alternative">לחלופין, תוכלו להעניק לנו מתנה במזומן באירוע עצמו.<br>
+                אנו מודים לכם מקרב לב על הנדיבות</p>
         </div>
 
         <!-- Contact -->
         <div class="contact-us" id="contact-us">
-            <h2>Contact Us</h2>
+            <h2>צרו קשר</h2>
             <div class="contact-columns">
 
                 <div class="contact-card">
-                    <p class="name">Nathalie Amselem</p>
+                    <p class="name">נטלי אמסלם</p>
                     <a href="tel:+972503799713">+972 (0)503799713</a></p>
                     <a href="mailto:nathalie.amselem@live.com">nathalie.amselem@live.com</a></p>
                     <div class="social-media">
@@ -366,7 +364,7 @@
                 </div>
 
                 <div class="contact-card">
-                    <p class="name">Itay Dahan</p>
+                    <p class="name">איתי דהן</p>
                     <a href="tel:+972526700704">+972 (0)526700704</a></p>
                     <a href="mailto:itay.dahan1999@gmail.com">itay.dahan1999@gmail.com</a></p>
                     <div class="social-media">
