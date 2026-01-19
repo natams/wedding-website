@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nathalie & Itay's Wedding Invitation</title>
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+
+    <link rel="stylesheet" href="invitation.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Corinthia:wght@400;700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/14cfbcea0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="locked">
+
+    <!-- Invitation  -->
+    <div class="bg scene" id="invitation">
+        <div class="invitation">
+            <div class="envelope">
+                <div class="mask">
+                    <div class="card">
+                        <div class="face front"> <img src="images/invitation2.png" /> </div>
+                        <div class="face back"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flap"></div>
+            <button class="invited-btn">!מוזמנים</button>
+        </div>
+    </div>
+
+    <!-- Details -->
+    <div class="details-section" id="details">
+        <div class="details-card">
+
+            <p class="details-intro">אנא הצטרפו אלינו ל</p>
+
+            <h2 class="details-title">
+                `חתונה של
+            </h2>
+
+            <div class="names">
+                <span>נטלי </span><br>
+                <span class="and">&</span><br>
+                <span>איתי</span>
+            </div>
+
+            <div class="details-info">
+                <p class="date" dir="rtl"><span>29</span> ביוני 2026</p>
+                <p class="location">האחוזה, מודיעין</p>
+                <p class="time">19:30</p>
+            </div>
+
+            <p class="details-before-btn">למידע נוסף, בקרו באתר</p>
+            <a href="index-he.html" class="details-btn">
+                אתר חתונה
+            </a>
+
+        </div>
+    </div>
+
+    <!-- RSVP -->
+    <!-- <div class="rsvp" id="rsvp">
+        <div class="rsvp-container">
+
+            <div id="form-content">
+                <h2>Kindly RSVP</h2>
+                <p>We can't wait to celebrate our special day with you. Your presence means the world to us! Please
+                    let
+                    us know if you will be able to join.</p>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfoTG2aWC43TGMQBuOGXsIwpMD5xHKkb6gzxtP4x4rOXQTT3A/formResponse"
+                    method="POST" target="hidden_iframe" id="rsvp-form">
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="entry.975553680" placeholder="Sam and Sarah Cohen"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="entry.1123997353" placeholder="samcohen@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number</label>
+                        <input type="tel" id="whatsapp" name="entry.1712801729" placeholder="+972501234567"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Will you be attending?</label>
+                        <div class="form-flex">
+                            <label>
+                                <input type="radio" name="entry.1653326350" value="Yes" required>
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="entry.1653326350" value="No" required>
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Total number of guests?</label>
+                        <input type="number" id="guests" name="entry.864625115" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="food">Any food restrictions?</label>
+                        <input type="text" id="food" name="entry.375290791" placeholder="Vegan, Gluten free">
+                    </div>
+
+                    <button type="submit" class="submit-button">Send RSVP</button>
+                </form>
+
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+            </div>
+            <p id="thank-you-message">Thank you for your RSVP!</p>
+
+        </div>
+    </div> -->
+
+    <div class="copyright">
+        <p>© 2026 <a href="https://nathalieamselem.com">Nathalie Amselem</a>. All Rights
+            Reserved</p>
+    </div>
+
+    <!-- Down Icon -->
+    <div class="scroll-down hidden" id="scrollDown">
+        <span class="fa-solid fa-arrow-down"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/invitation.js"></script>
+
+</body>
+
+</html>
