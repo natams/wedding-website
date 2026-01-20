@@ -639,8 +639,8 @@ a {
     padding: 5em 0em 5em 0em;
     background-image: url('images/n&i5.webp');
     background-size: cover;
-    /* background-position: center; */
-    background-position-y: -320px;
+    /* background-position: top; */
+    background-position-y: -60px;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -653,7 +653,7 @@ a {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: #0000006e;
+    background-color: #000000a1;
     z-index: 0;
 }
 
@@ -828,7 +828,7 @@ custom-countdown div {
 
 @media (max-width: 600px) {
     .location h2 {
-        margin: 0.5em 1em -0.40em 1em;
+        margin: 1em 1em -0.40em 1em;
     }
 }
 
@@ -979,9 +979,9 @@ input:focus::placeholder {
 /* Tefila */
 
 .tefila {
-    background-image: url('images/n&i6.webp');
+    background-image: url('images/n&i6-2.webp');
     background-size: cover;
-    background-position: center;
+    background-position-y: -180px;
     padding: 4em 2em 3em 4em;
     display: flex;
     justify-content: center;
@@ -1109,8 +1109,9 @@ input:focus::placeholder {
 @media (max-width: 900px) {
     .tefila {
         padding: 0;
-        min-height: 550px;
+        min-height: 580px;
         height: 580px;
+        background-position: center;
     }
 
     .tefila-container {
@@ -1217,7 +1218,7 @@ p.alternative {
     } */
 
     .registry h2 {
-        margin: 0em 0em 0.5em 0em;
+        margin: 0.5em 0em 0.5em 0em;
     }
 
     .registry p {
