@@ -86,30 +86,30 @@ window.addEventListener('scroll', () => {
 button.one('click', pullOut);
 button.on('click', toggleFlip);
 
-  // Hide arrow when scrollings down
-function hideArrowAndUnlock() {
+//   // Hide arrow when scrollings down
+// function hideArrowAndUnlock() {
 
-  scrollDown.classList.remove('visible');
-  scrollDown.classList.add('hidden');
+//   scrollDown.classList.remove('visible');
+//   scrollDown.classList.add('hidden');
 
-  document.body.classList.remove('locked');
-  arrowVisible = false;
-}
+//   document.body.classList.remove('locked');
+//   arrowVisible = false;
+// }
 
-window.addEventListener('scroll', () => {
-  if (!arrowVisible) return;
+// window.addEventListener('scroll', () => {
+//   if (!arrowVisible) return;
 
-  if (window.scrollY > 5) {
-    hideArrowAndUnlock();
-  }
-}, { passive: true });
+//   if (window.scrollY > 5) {
+//     hideArrowAndUnlock();
+//   }
+// }, { passive: true });
 
-window.addEventListener('wheel', () => {
-  if (!arrowVisible) return;
-  hideArrowAndUnlock();
-}, { passive: true });
+// window.addEventListener('wheel', () => {
+//   if (!arrowVisible) return;
+//   hideArrowAndUnlock();
+// }, { passive: true });
 
-window.addEventListener('touchmove', () => {
-  if (!arrowVisible) return;
-  hideArrowAndUnlock();
-}, { passive: true });
+// window.addEventListener('touchmove', () => {
+//   if (!arrowVisible) return;
+//   hideArrowAndUnlock();
+// }, { passive: true });
