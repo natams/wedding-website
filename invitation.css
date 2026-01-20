@@ -62,8 +62,10 @@ body.is-preload *:after {
 /* Invitation */
 
 .bg {
-    background: url("images/n&i3.webp") center / cover no-repeat;
-}
+    background: url(images/n&i8.webp);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -990px;}
 
 .scene {
     position: relative;
@@ -212,7 +214,8 @@ img {
 
 @media (max-width: 600px) {
     .bg {
-        background: url(images/n&i1.webp) center center / cover no-repeat;
+        /* background: url(images/n&i1.webp) center center / cover no-repeat; */
+        background-position-y: 0;
     }
 
     .invitation {
