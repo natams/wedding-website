@@ -226,7 +226,7 @@ img {
 
     .invitation {
         position: relative;
-        transform: scale(0.70);
+        transform: scale(0.6);
         top: 0%;
         left: 0%;
     }
@@ -234,7 +234,7 @@ img {
 
 @media (max-width: 500px) {
     .invitation {
-        transform: scale(0.50);
+        transform: scale(0.45);
     }
 
     .invitation img.scale-up {
@@ -249,7 +249,7 @@ img {
 
 @media (max-width: 370px) {
     .invitation {
-        transform: scale(0.45);
+        transform: scale(0.4);
     }
 }
 
