@@ -247,9 +247,10 @@ img {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .invitation {
-        transform: scale(0.4);
+        transform: scale(0.37);
+        left: -3%;
     }
 }
 
