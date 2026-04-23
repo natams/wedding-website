@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Nathalie & Itay's Wedding</title>
-    <link rel="icon" type="image/x-icon" href="images/favi.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
     <!-- Open Graph (WhatsApp, Facebook, etc.) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nathalie & Itay's Wedding" />
     <meta property="og:description" content="You're Officially Invited!" />
     <meta property="og:url" content="https://nathalieanditay.com/invitation-en" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/natams/wedding-website/main/images/thumbnail2.jpg" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/natams/wedding-website/refs/heads/main/images/thumbnail.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="800" />
 
@@ -74,7 +74,7 @@
             </div>
 
             <p class="details-before-btn">For more Info, Visit Our</p>
-            <a href="index.html" class="details-btn">
+            <a href="nathalieanditay.com" class="details-btn">
                 Wedding Website
             </a>
 
@@ -82,70 +82,73 @@
     </div>
 
     <!-- RSVP -->
-    <!-- <div class="rsvp" id="rsvp">
+    <div class="rsvp" id="rsvp">
         <div class="rsvp-container">
 
             <div id="form-content">
                 <h2>Kindly RSVP</h2>
                 <p>We can't wait to celebrate our special day with you. Your presence means the world to us! Please
-                    let
-                    us know if you will be able to join.</p>
-                <form
-                    action="https://docs.google.com/forms/d/e/1FAIpQLSfoTG2aWC43TGMQBuOGXsIwpMD5xHKkb6gzxtP4x4rOXQTT3A/formResponse"
-                    method="POST" target="hidden_iframe" id="rsvp-form">
-
+                    let us know if you will be able to join.</p>
+            
+                <form id="rsvp-form">
                     <div class="form-group">
                         <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="entry.975553680" placeholder="Sam and Sarah Cohen"
-                            required>
+                        <input type="text" id="full-name" placeholder="Sam and Sarah Cohen" required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="entry.1123997353" placeholder="samcohen@gmail.com"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="whatsapp">WhatsApp Number</label>
-                        <input type="tel" id="whatsapp" name="entry.1712801729" placeholder="+972501234567"
-                            required>
-                    </div>
-
+            
                     <div class="form-group">
                         <label>Will you be attending?</label>
                         <div class="form-flex">
-                            <label>
-                                <input type="radio" name="entry.1653326350" value="Yes" required>
-                                Yes
-                            </label>
-                            <label>
-                                <input type="radio" name="entry.1653326350" value="No" required>
-                                No
-                            </label>
+                            <label><input type="radio" name="attending" value="Yes" required> Yes</label>
+                            <label><input type="radio" name="attending" value="No" required> No</label>
                         </div>
                     </div>
-
+            
                     <div class="form-group">
                         <label for="guests">Total number of guests?</label>
-                        <input type="number" id="guests" name="entry.864625115" min="1" required>
+                        <input type="number" id="guests" min="1" required>
                     </div>
-
+            
                     <div class="form-group">
                         <label for="food">Any food restrictions?</label>
-                        <input type="text" id="food" name="entry.375290791" placeholder="Vegan, Gluten free">
+                        <input type="text" id="food" placeholder="Kashrut, Vegan, Gluten free">
                     </div>
-
+            
                     <button type="submit" class="submit-button">Send RSVP</button>
                 </form>
-
-                <iframe name="hidden_iframe" style="display:none;"></iframe>
-
             </div>
+            
             <p id="thank-you-message">Thank you for your RSVP!</p>
+            
+            <script>
+            document.getElementById('rsvp-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const attending = form.querySelector('input[name="attending"]:checked');
+            
+                const data = {
+                    full_name: document.getElementById('full-name').value,
+                    attending: attending ? attending.value : '',
+                    guests: Number(document.getElementById('guests').value),
+                    food_restrictions: document.getElementById('food').value
+                };
+            
+                await fetch('https://api.base44.com/api/apps/69df819d58983f2b2cd44175/entities/RSVP', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'apikey': 'YOUR_API_KEY_HERE'
+                    },
+                    body: JSON.stringify(data)
+                });
+            
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('thank-you-message').style.display = 'block';
+            });
+            </script>
 
         </div>
-    </div> -->
+    </div>
 
     <!-- <div class="copyright">
         <p>© 2026 Nathalie Amselem. All Rights
