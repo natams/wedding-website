@@ -432,8 +432,8 @@ a {
 
 .bh {
     position: absolute;
-    top: 4%;
-    left: 50%;
+    top: 12%;
+    left: 51%;
     transform: translate(-50%, -50%);
     font-size: 0.7em;
     font-family: "Antic Didone", serif;
@@ -538,6 +538,11 @@ a {
         margin: 0em 0em 2em 0em;
         right: 10px;
         position: relative;
+    }
+
+        .bh {
+        top: 5%;
+        left: 49%;
     }
 }
 
@@ -1522,7 +1527,7 @@ p.alternative {
     font-size: 0.7em;
     font-weight: 300;
     color: #ffffff97;
-    text-decoration: none;    
+    text-decoration: none;
     letter-spacing: 0.5px;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
