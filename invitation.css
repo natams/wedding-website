@@ -187,8 +187,6 @@ body.is-preload *:after {
     transform: translate(-50%, 0);
 }
 
-
-
 button.invited-btn {
     font-size: 1em;
     padding: 15px 30px;
@@ -255,7 +253,7 @@ img {
 }
 
 /* RSVP */
-/* 
+
 .rsvp {
     background-color: #ECE5DF;
     padding: 4em 2em;
@@ -399,7 +397,7 @@ input:focus::placeholder {
     .rsvp-container {
         transform: scale(0.8);
     }
-} */
+}
 
 /* Details */
 
@@ -464,14 +462,16 @@ input:focus::placeholder {
 }
 
 .details-info p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #555;
     margin: 0.4em 0;
     letter-spacing: 0.5px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+
 }
 
 .details-info .date {
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .details-before-btn {

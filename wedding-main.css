@@ -96,6 +96,28 @@ body.is-menu-visible #menu .close {
     opacity: 1;
 }
 
+#he #menu>.inner>ul>li a,
+#he p.subtitle,
+#he .timeline ul li .event,
+#he .location,
+#he .registry,
+#he .contact-us,
+#he .contact-card .name {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-weight: 300 !important;
+    font-size: 0.95em !important;
+}
+
+#he .countdown h2,
+#he .location h2,
+#he .tefila h2,
+#he .registry h2,
+#he .registry p.alternative,
+#he .contact-us h2 {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-weight: 300 !important;
+}
+
 /* Basic */
 
 @-ms-viewport {
@@ -408,6 +430,19 @@ a {
     z-index: 1;
 }
 
+.bh {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7em;
+    font-family: "Antic Didone", serif;
+    color: #f7f7f770;
+    z-index: 2;
+    pointer-events: none;
+    font-style: italic;
+}
+
 .and-symbol {
     position: absolute;
     top: 55%;
@@ -619,12 +654,13 @@ a {
     font-size: 1em;
     font-weight: 500;
     text-align: left;
+    color: #4f4f4f;
 }
 
 @media (max-width: 900px) {
     .timeline {
-        padding: 1em 0em;
-        height: 550px;
+        padding: 2em 0em;
+        height: 600px;
     }
 
     .center {
@@ -1006,7 +1042,11 @@ input:focus::placeholder {
     margin: 0 0 0em 0;
     font-weight: 400;
     line-height: 1.4;
-    margin: 0.2em 0em 0.2em 0em;
+    margin: 0.2em 0em 0.5em 0em;
+}
+
+#he #tefila h2 {
+    font-size: 1.3em !important;
 }
 
 .tefila p {
@@ -1109,8 +1149,8 @@ input:focus::placeholder {
 @media (max-width: 900px) {
     .tefila {
         padding: 0;
-        min-height: 580px;
-        height: 580px;
+        min-height: 600px;
+        height: 600px;
         background-position: center;
     }
 
@@ -1135,6 +1175,10 @@ input:focus::placeholder {
     font-size: 2.5em;
     color: #000000;
     margin: 0em 0em 1em 0em;
+}
+
+#he .registry h2 {
+    font-size: 1.7em !important;
 }
 
 .registry p {
@@ -1218,7 +1262,7 @@ p.alternative {
     } */
 
     .registry h2 {
-        margin: 0.5em 0em 0.5em 0em;
+        margin: 0.5em 0em 1em 0em;
     }
 
     .registry p {
@@ -1263,7 +1307,7 @@ p.alternative {
     }
 
     .registry p {
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 0em 0.5em 2em 0.5em;
     }
 
@@ -1276,8 +1320,8 @@ p.alternative {
     }
 
     p.alternative {
-        font-size: 1em;
-        margin: 1.5em auto 1em auto;
+        font-size: 0.79em;
+        margin: 2em auto 1em auto;
     }
 
     .transfer {
@@ -1308,7 +1352,7 @@ p.alternative {
 
 .contact-us h2 {
     font-size: 1.8em;
-    color: #000000;
+    color: #383838;
     margin: 0em 0em 0em 0em;
     font-family: 'Serif';
     font-weight: 400;
@@ -1460,21 +1504,30 @@ p.alternative {
     top: 115px;
     left: -10px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: #00000070;
+    border-radius: 8px;
+    padding: 0.26em 0.4em 0.25em 0.8em;
+    color: #ffffff97;
+}
+
+.language-switch svg {
+    width: .84em;
+    height: .84em;
 }
 
 .language-switch a {
-    font-size: 1em;
-    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.7em;
     font-weight: 300;
-    color: #ffffffc0;
-    text-decoration: none;
-    background-color: #00000070;
-    padding: 0.2em 0.35em 0.3em 0.8em;
-    border-radius: 8px;
+    color: #ffffff97;
+    text-decoration: none;    
     letter-spacing: 0.5px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.language-switch a:hover {
+.language-switch:hover {
     background: #000000;
 }
 
@@ -1595,7 +1648,7 @@ body.slide-out {
 } */
 
 .hr-font {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
     margin: 0em 0em 1.5em 0em !important;
 }
 
