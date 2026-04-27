@@ -52,7 +52,7 @@ function pullOut() {
       y: '125%',
       rotationZ: -90,
       transformOrigin: '50% 50%',
-      scaleY: 0.95,
+      scaleY: 0.9,
       ease: Circ.easeInOut
     }, 'move');
 }
