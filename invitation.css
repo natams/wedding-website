@@ -168,7 +168,7 @@ body.is-preload *:after {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0px;
+    left: -4px;
     position: absolute;
     background: transparent 50% 100% / auto 100% no-repeat;
 }
