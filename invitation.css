@@ -148,7 +148,7 @@ body.is-preload *:after {
     z-index: 0;
     margin: auto;
     top: 20%;
-    transform: translate(-13%, -50%);
+    transform: translate(-13%, -52%);
     perspective: 1200px;
     /* background-color: rgba(255, 0, 0, 0.308); */
 }
@@ -156,7 +156,7 @@ body.is-preload *:after {
 .card {
     position: relative;
     width: 732px;
-    height: 545px;
+    height: 570px;
     margin: auto;
     transform-style: preserve-3d;
     transform-origin: 70% 10%;
@@ -168,7 +168,7 @@ body.is-preload *:after {
     top: 0;
     right: 0;
     bottom: 0;
-    left: -4px;
+    left: 0px;
     position: absolute;
     background: transparent 50% 100% / auto 100% no-repeat;
 }
@@ -217,6 +217,12 @@ img {
     }
 }
 
+@media (max-height: 700px) {
+    .invitation {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
 @media (max-width: 600px) {
     .bg {
         background: url(images/n&i8.webp) center center / cover no-repeat;
@@ -236,7 +242,7 @@ img {
     }
 
     .invitation img.scale-up {
-        transform: translate(0%, -3%) scale(1.2);
+        transform: translate(0%, 0%) scale(1.2);
         transition: transform 0.4s ease-out;
     }
 
@@ -350,13 +356,13 @@ input[type="number"] {
 }
 
 ::placeholder {
-  color: #999;
-  font-size: 0.95em;
-  opacity: 1;
+    color: #999;
+    font-size: 0.95em;
+    opacity: 1;
 }
 
 input:focus::placeholder {
-  opacity: 0;
+    opacity: 0;
 }
 
 .submit-button {
@@ -441,20 +447,21 @@ input:focus::placeholder {
     color: #555;
     line-height: 1.2;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.names span:nth-child(3) {
+    line-height: 1;
 }
 
 .cursive {
     font-family: "Corinthia", serif;
-    font-size: 0.7em;
+    font-size: 0.55em;
     letter-spacing: 0px;
     font-style: italic;
     text-transform: lowercase;
-}
-
-.and {
-    font-size: 0.6em;
-    font-style: italic;
-    font-weight: 400;
 }
 
 .details-info {
@@ -471,7 +478,7 @@ input:focus::placeholder {
 }
 
 .details-info .date {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .details-before-btn {
@@ -501,6 +508,28 @@ input:focus::placeholder {
 .details-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+.rsvp-text {
+    margin: 2em auto 0em auto;
+    font-size: 0.75em;
+    color: #7b6760;
+    max-width: 250px;
+}
+
+.rsvp-text b {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-weight: 500;
+}
+
+.rsvp-text a {
+    color: #7b6760;
+}
+
+#he {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-weight: 300 !important;
+    font-size: 0.95em !important;
 }
 
 @media (max-width: 600px) {
