@@ -63,13 +63,12 @@ body.is-preload *:after {
 
 .bg {
     background: url(images/n&i8-2.webp);
-    background-position: center;
+    background-position-y: 45%;
     background-size: cover;
 }
 
 .scene {
     position: relative;
-    min-height: 100sdvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,25 +224,32 @@ img {
 
 @media (max-width: 600px) {
     .bg {
-        background: url(images/n&i8.webp) center center / cover no-repeat;
+        background: url(images/n&i1-2.webp) center center / cover no-repeat;
     }
 
     .invitation {
         position: relative;
         transform: scale(0.6);
         top: 0%;
-        left: -2%;
+        left: 0%;
+        bottom: 120px;
     }
 }
 
 @media (max-width: 500px) {
     .invitation {
-        transform: scale(0.45);
+        transform: scale(0.5);
     }
 
     .invitation img.scale-up {
-        transform: translate(0%, 0%) scale(1.2);
+        transform: translate(-50%, 0%) scale(1.35);
         transition: transform 0.4s ease-out;
+    }
+
+    .mask {
+        height: 1920px;
+        clip-path: inset(0 0 32% 0);
+        transform: translate(-13%, -49%);
     }
 
     button.invited-btn {
@@ -252,15 +258,12 @@ img {
 }
 
 @media (max-width: 400px) {
-    .invitation {
-        transform: scale(0.37);
-        left: -3%;
-    }
+    .invitation {}
 }
 
 /* RSVP */
 
-.rsvp {
+/* .rsvp {
     background-color: #ECE5DF;
     padding: 4em 2em;
     display: flex;
@@ -403,7 +406,7 @@ input:focus::placeholder {
     .rsvp-container {
         transform: scale(0.8);
     }
-}
+} */
 
 /* Details */
 
