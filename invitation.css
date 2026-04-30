@@ -63,7 +63,7 @@ body.is-preload *:after {
 
 .bg {
     background: url(images/n&i8-2.webp);
-    background-position: center;
+    background-position: center 45%;
     background-size: cover;
 }
 
@@ -78,7 +78,7 @@ body.is-preload *:after {
 .invitation {
     width: 732px;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -210,15 +210,16 @@ img {
     border-radius: 5px;
 }
 
-/* @media (max-width: 1700px) {
+@media (max-width: 1700px) {
     .invitation {
-        transform: translate(-50%, -50%) scale(0.9);
+        transform: translate(-50%, -50%) scale(0.8);
     }
-} */
+}
 
 @media (max-width: 735px) {
     .invitation {
         transform: translate(-50%, -50%) scale(0.9);
+        top: 50%;
     }
 }
 
