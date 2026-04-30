@@ -259,7 +259,9 @@ img {
 }
 
 @media (max-width: 400px) {
-    .invitation {}
+    .invitation {
+        transform: scale(0.45);
+    }
 }
 
 /* RSVP */
