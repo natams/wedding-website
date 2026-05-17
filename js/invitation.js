@@ -43,18 +43,16 @@ function pullOut() {
 
     .add('move')
 
-    .to('.mask', 1.3, {
+    .to('.mask', 1.1, {
       clipPath: 'inset(0 0 0% 0)',
       ease: Circ.easeInOut
     }, 'move')
 
 .to('.card', 0.85, {
-      y: '125%',
-      rotationZ: -90,
-      transformOrigin: '50% 50%',
-      scaleY: 0.9,
-      ease: Circ.easeInOut
-    }, 'move');
+  transform: 'translate(0%, 125%) matrix(0, -0.92, 0.9, 0, 0, 0)',
+  transformOrigin: '51.5% 50%',
+  ease: Circ.easeInOut
+}, 'move');
 }
 
 function toggleFlip() {
